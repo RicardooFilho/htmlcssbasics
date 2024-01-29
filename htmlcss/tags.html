@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Cabeçalho</h1>
+  <p><b>Lorem ipsum</b>, <strong>sit amet consectetur</strong> adipisicing elit. <i>Explicabo</i> <em>dignissimos</em> iusto necessitatibus alias assumenda ea corrupti quas, soluta voluptatem et, suscipit accusantium, similique esse. Blanditiis quod enim cupiditate! Aspernatur, esse.</p>
+  <hr>
+  <p><del>vermelho</del>, <ins>azul.</ins> <br> H<sub>2</sub>O com 2<sup>2</sup></p>
+
+  <blockquote>aqui estou fazendo um citação</blockquote>
+
+  <pre><code>
+    public class Pessoa {
+
+      @Id
+      @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "gen_pessoa")
+      @SequenceGenerator(sequenceName = "pessoa_sequence", name = "gen_pessoa", initialValue = 1, allocationSize = 1)
+      private Long id;
+  
+      @Column(length = 254, nullable = false)
+      private String nome;
+  
+      @Column(length = 11, nullable = false)
+      private String cpf;
+  
+      @Column(length = 11, nullable = false)
+      private String telefone;
+  
+      @Column(length = 100, nullable = false)
+      private String email;
+  
+      @ManyToMany
+      @JoinTable(name = "pessoa_local",
+              joinColumns = @JoinColumn(name = "pessoa_id", referencedColumnName = "id"),
+              inverseJoinColumns = @JoinColumn(name = "local_id", referencedColumnName = "id"))
+      private List<Local> locais = new ArrayList<Local>();
+  
+      public Pessoa(Long id, String nome, String cpf, String telefone, String email) {
+          this.id = id;
+          this.nome = nome;
+          this.cpf = cpf;
+          this.telefone = telefone;
+          this.email = email;
+      }
+  }</code></pre>
+</body>
+</html>
