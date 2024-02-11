@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <section>
+      <h1>Cabeça</h1>
+      <p>O formulário</p>
+
+      <fieldset>
+        <legend>Descrição</legend>
+        <p>
+          <input type="text">
+        </p>
+      </fieldset>
+    </section>
+  </form>
+
+  <form action="#" method="get" target="_blank" autocomplete="off">
+    <p>O meu formulário</p>
+
+    <p>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+    </p>
+
+    <p>
+      <label for="idade">Tenho mais de 18 anos</label>
+      <input type="checkbox" id="idade" name="idade"><br>
+
+      <label for="responsavel">Moro Sozinho</label>
+      <input type="checkbox" id="responsavel" name="responsavel">
+    </p>
+
+    <p>
+      <label for="dev-junior">Sou um desenvolvedor Junior</label>
+      <input type="radio" id="dev-junior" name="dev"><br>
+
+      <label for="dev-pleno">Sou um desenvolvedor Pleno</label>
+      <input type="radio" id="dev-pleno" name="dev"><br>
+
+      <label for="dev-senior">Sou um desenvolvedor Senior</label>
+      <input type="radio" id="dev-senior" name="dev">
+    </p>
+
+    <p>
+      <label for="data">Data: </label>
+      <input type="date" id="data" name="data" value="2024-02-11">
+    </p>
+
+    <p>
+      <label for="datahoralocal">Data e Hora: </label>
+      <input type="datetime-local" id="datahoralocal" name="datahoralocal" value="2024-02-11 00:00">
+    </p>
+
+    <p>
+      <label for="hora">Hora: </label>
+      <input type="time" id="hora" name="hora" value="00:00">
+    </p>
+
+    <p>
+      <label for="cor">Cor preferida </label>
+      <input type="color" id="cor" name="cor" value="#FFFFFF">
+    </p>
+
+    <p>
+      <label for="email">E-mail </label>
+      <input type="email" id="email" name="email" placeholder="email@email.com">
+    </p>
+
+    <p>
+      <label for="foto">Sua foto </label>
+      <input type="file" id="foto" name="foto">
+    </p>
+
+    <p>
+      <label for="numero">Seu número </label>
+      <input type="number" id="numero" name="numero" min="10000000" max="99999999"> 
+    </p>
+
+    <p>
+      <label for="senha">Sua senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha"> 
+    </p>
+
+    <p>
+      <label for="range">Range: </label>
+      <input type="range" id="range" name="range" min="0" max="10" step="1"> 
+    </p>
+
+    <p>
+      <button type="reset">Reset</button>
+      <button type="submit">Enviar</button>
+    </p>
+  </form>
+</body>
+</html>
