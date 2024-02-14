@@ -1,0 +1,39 @@
+/* html {
+  font-size: 62.5%;
+}
+
+boa prática para usar a unidade de medida 'rem', visto que dessa forma
+podemos usar o rem igual px. */
+html {
+  font-size: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pai {
+  font-size: 50px;
+  background-color: yellow;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* unidade de medida 'em' se baseia no tamanho da fonte do elemento pai */
+div p {
+  font-size: 0.5em;
+}
+
+/* unidade de medida 'rem' se baseia no tamanho da fonte do root(HTML) */
+p {
+  font-size: 1rem;
+}
+
+.color-one {
+  background-color: turquoise;
+}
+
+.color-two {
+  background-color: red;
+}
