@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+  background-color: red;
+}
+
+a {
+  color: darkorange;
+}
+
+/*CSS para links que nunca foram visitados*/
+a:link {
+  color: deeppink;
+}
+
+/*CSS para links que já foram visitados*/
+a:visited {
+  color: firebrick;
+}
+
+a:hover {
+  background-color: darkblue;
+  color: white;
+  text-decoration: none;
+}
+
+/*CSS que será aplicado no momento em que o link for selecionado (Para testar bastar manter selecionado o link para ver a estilização sendo aplicada)*/
+a:active {
+  background-color: darkslategray;
+  color: white;
+  text-decoration: none;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: 1px solid black;
+}
+
+input:disabled {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+input:enabled {
+  background-color: gray;
+  cursor: pointer;
+}
+
+input:checked {
+  width: 50px;
+  height: 50px;
+}
+
+input:checked+p {
+  background-color: blueviolet;
+}
+
+input:not(:checked)+p {
+  background-color: yellow;
+}
+
+.pai .lista li:first-child {
+  background-color: green;
+}
+
+.pai .lista li:last-child {
+  background-color: red;
+}
+
+input:required {
+  background-color: chocolate;
+}
+
+p:not(.meio) {
+  color: blue;
+}

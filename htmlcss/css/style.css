@@ -1,5 +1,51 @@
-.caixa {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  color: purple;
+}
+
+body div section p,
+body div section h1 {
+  color: red;
+}
+
+.heading {
+  color: green;
+}
+
+.main-content h2 {
+  color: pink;
+  font-style: italic;
+}
+
+.main-content h2.lorem {
+  font-size: 50px;
+}
+
+div {
+  color: inherit;
+  margin-left: 10px;
+}
+
+.pai > .filha > .filha{
+  color: green
+}
+
+.pai h1~p {
+  color: darkgoldenrod;
+}
+
+.pai p+h1 {
+  color: violet;
+}
+
+.pai .um~.dois {
+  color: brown;
+}
+
+[meu-atributo] {
   background-color: red;
-  height: 120px;
-  width: 120px;
-} 
+}

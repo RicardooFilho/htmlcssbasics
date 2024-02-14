@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:nth-child(odd) {
+  background-color: purple;
+}
+
+ul li:nth-child(even) {
+  background-color: yellow;
+}
+
+ul li:nth-child(5n) {
+  background-color: red;
+}
+
+/* A partir do terceiro elemento, vai contando de 5 em 5 */
+ul li:nth-child(5n+3) {
+  background-color: blue;
+}
+
+/* Apenas os 2 primeiros elementos da minha li vão receber a estilização */
+ul li:nth-child(-n+2) {
+  background-color: green;
+}
+
